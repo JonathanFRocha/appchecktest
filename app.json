@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "app-check-mobile",
+    "slug": "app-check-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "app-check-mobile"
+}
