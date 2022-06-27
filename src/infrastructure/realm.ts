@@ -1,12 +1,8 @@
-import { Realm } from '@realm/react';
-import { FailedRequestSchema } from './models/FailedRequests';
+import { createRealmContext, Realm } from '@realm/react';
 
-const getRealm = async () => {
-  return await Realm.open({
-    path: 'myrealm',
-    schemaVersion: 1,
-    schema: [FailedRequestSchema],
-  });
-};
+import { FailedRequest } from './models/FailedRequests';
 
-export default getRealm;
+export const RealmContext = createRealmContext({
+  schema: [FailedRequest],
+  schemaVersion: 1,
+});
